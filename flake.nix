@@ -41,6 +41,13 @@
               features = "html";
               format = "html";
             };
+
+            virtualPaths = [
+              {
+                src = ./style.css;
+                dest = "style.css";
+              }
+            ];
           };
           typstOutput = typixLib.buildTypstProject (commonArgs // { inherit src; });
         in
