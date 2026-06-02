@@ -1,3 +1,5 @@
+#set document(title: "Scoped Commits")
+
 #html.html([
   #html.head([
     #html.title("Scoped Commits")
@@ -63,7 +65,7 @@
           border-radius: 8px;
         }
 
-        code {
+        :not(pre) > code {
           border-radius: 5px;
           background-color: #0005;
           padding: 1px 0.5rem;
@@ -82,58 +84,19 @@
   #html.body([
     #html.div(class: "container", [
       #html.header([
-        #html.h1("Scoped Commits")
-        #html.h3("A commit format focused on what matters")
+        #title()
+
+        == A commit format focused on what matters
       ])
-      #html.main([
-        #html.h2("Summary")
-        #html.p([
-          Scoped Commits is a loose standard for formatting commit messages that
-          focuses on making the commit log quickly understandable to
-          contributors.
-        ])
-        #html.p([
-          Normal commit messages should be formatted as follows:
-        ])
-        #html.pre(
-          "<scope>: <description>
 
-[optional body]
+      #html.main(include "content.typ")
 
-[optional trailer(s)]",
-        )
-        #html.ul([
-          #html.li(
-            [`<scope>` --- the subystem, area, or module that the commit touches],
-          )
-          #html.li(
-            [`<description>` --- a short description of the changes made],
-          )
-          #html.li(
-            [`[optional body]` --- detailed information about the changes],
-          )
-          #html.li(
-            [`[optional trailers(s)]` -- additional metadata about the commit],
-          )
-        ])
-        #html.p(
-          [Reverts, merges, and other special commits can be formatted however you like.],
-        )
-
-        #html.h2("Motivation")
-        #html.p([
-          Scoped Commits is a loose standard for formatting commit messages that focuses on making the commit log easy to understand.
-
-          Variants of it are used by
-          Linux
-        ])
-      ])
       #html.footer([
         #html.small([
           #sym.copyright 2026
-          #html.a(href: "https://nevarro.space", "Nevarro LLC").
+          #link("https://nevarro.space")[Nevarro LLC].
           All rights reserved.
-          #html.a(href: "https://github.com/nevarro-space/scopedcommits.com", "Source code").
+          #link("https://github.com/nevarro-space/scopedcommits.com")[Source Code].
         ])
       ])
     ])
