@@ -20,9 +20,45 @@ Normal commit messages should be formatted as follows:
 
 Reverts, merges, and other special commits can be formatted however you like.
 
-= Motivation
+= Examples
 
-Scoped Commits is a loose standard for formatting commit messages that focuses
-on making the commit log easy to understand.
+#table(
+  columns: 2,
+  table.header([*Example*], [*From*]),
+  [
+    ```
+    i2c: virtio: mark device ready before registering the adapter
+    ```
+  ],
+  [#link("https://github.com/torvalds/linux/commit/1d774589f924")[Linux]],
 
-Variants of it are used by Linux
+  [
+    ```
+    linuxulator: Return EINVAL for invalid inotify flags
+    ```
+  ],
+  [#link(
+    "https://github.com/freebsd/freebsd-src/commit/f77d37cffdf3",
+  )[FreeBSD]],
+
+  [
+    ```
+    gitlab-ci: update macOS image
+    ```
+  ],
+  [#link("https://github.com/git/git/commit/62319b49bbe7")[Git]],
+
+  [
+    ```
+    net/http/cookiejar: add godoc links
+    ```
+  ],
+  [#link("https://github.com/golang/go/commit/517d4d3c7976")[Go]],
+
+  [
+    ```
+    xwayland: 24.1.11 -> 24.1.12
+    ```
+  ],
+  [#link("https://github.com/NixOS/nixpkgs/commit/7bf858875a54")[nixpkgs]],
+)
