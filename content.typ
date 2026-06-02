@@ -20,7 +20,8 @@ Reverts, merges, and other special commits can be formatted however you like.
 
 Projects using Scoped Commits often provide additional rules defining the valid
 scopes and how to format the description, body, and trailers of the commit
-message.
+message. Projects may also choose to enforce formatting rules for special
+commits.
 
 = Examples
 
