@@ -50,7 +50,7 @@
           '';
 
           formatter = pkgs.writeShellScriptBin "fmt" ''
-            exec ${pkgs.typstyle}/bin/typstyle --inplace "''${@:-index.typ}"
+            exec ${pkgs.typstyle}/bin/typstyle --inplace *.typ
           '';
 
           devShells.default = typixLib.devShell {
