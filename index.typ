@@ -5,6 +5,11 @@
     #html.title("Scoped Commits")
     #html.meta(charset: "utf-8")
     #html.style(read("style.css"))
+    #html.elem("script", attrs: (
+      "data-goatcounter": "https://stats.scopedcommits.com/count",
+      async: "async",
+      src: "//stats.scopedcommits.com/count.js",
+    ))
   ])
   #html.body([
     #html.div(class: "container", [
