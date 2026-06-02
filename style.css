@@ -22,7 +22,6 @@ body {
 .container {
   max-width: 800px;
   min-width: 0;
-  margin: 1rem;
 }
 
 a,
@@ -42,6 +41,7 @@ header {
   border-bottom: 1px solid #444;
 
   h1 {
+    margin-top: 4rem;
     margin-bottom: 0;
   }
 
@@ -51,7 +51,7 @@ header {
   }
 }
 
-:not(td)>pre {
+pre {
   background-color: #333;
   padding: 1rem;
   border-radius: 8px;
@@ -59,8 +59,8 @@ header {
 }
 
 :not(pre)>code {
-  border-radius: 5px;
-  background-color: #0005;
+  border-radius: 4px;
+  background-color: #333;
   padding: 1px 0.5rem;
 }
 
