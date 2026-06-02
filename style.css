@@ -50,16 +50,6 @@ header {
   }
 }
 
-table {
-  thead {
-    border-bottom: 1px solid white;
-
-    >tr>th {
-      text-align: left;
-    }
-  }
-}
-
 :not(td)>pre {
   background-color: #333;
   padding: 1rem;
@@ -72,12 +62,6 @@ table {
   padding: 1px 0.5rem;
 }
 
-td>pre {
-  background-color: #333;
-  padding: 0.5rem;
-  border-radius: 4px;
-  margin: 0.25rem 0;
-}
 
 footer {
   color: #777;
