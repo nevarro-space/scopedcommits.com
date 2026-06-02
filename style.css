@@ -21,6 +21,7 @@ body {
 
 .container {
   max-width: 800px;
+  min-width: 0;
   margin: 1rem;
 }
 
@@ -54,6 +55,7 @@ header {
   background-color: #333;
   padding: 1rem;
   border-radius: 8px;
+  overflow-x: auto;
 }
 
 :not(pre)>code {
