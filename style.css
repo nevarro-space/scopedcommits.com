@@ -7,9 +7,31 @@
     url(https://cdn.jsdelivr.net/fontsource/fonts/iosevka@latest/latin-400-normal.woff) format("woff");
 }
 
+:root {
+  --bg: #222;
+  --fg: #eee;
+  --fg-muted: #aaa;
+  --fg-subtle: #777;
+  --border: #444;
+  --code-bg: #333;
+  --link: #84B4FF;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f9f9f9;
+    --fg: #111;
+    --fg-muted: #555;
+    --fg-subtle: #888;
+    --border: #ccc;
+    --code-bg: #ebebeb;
+    --link: #0055cc;
+  }
+}
+
 body {
-  background-color: #222;
-  color: #eee;
+  background-color: var(--bg);
+  color: var(--fg);
   font-family: Iosevka, monospace;
   line-height: 1.4;
   font-size: 1.1rem;
@@ -28,7 +50,7 @@ a,
 a:hover,
 a:visited,
 a:active {
-  color: #84B4FF;
+  color: var(--link);
   text-decoration: none;
 }
 
@@ -38,7 +60,7 @@ a:hover {
 
 header {
   margin-bottom: 2rem;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid var(--border);
 
   h1 {
     margin-top: 4rem;
@@ -47,12 +69,12 @@ header {
 
   h3 {
     margin-top: 0;
-    color: #aaa;
+    color: var(--fg-muted);
   }
 }
 
 pre {
-  background-color: #333;
+  background-color: var(--code-bg);
   padding: 1rem;
   border-radius: 8px;
   overflow-x: auto;
@@ -60,14 +82,13 @@ pre {
 
 :not(pre)>code {
   border-radius: 4px;
-  background-color: #333;
+  background-color: var(--code-bg);
   padding: 1px 0.5rem;
 }
 
-
 footer {
-  color: #777;
-  border-top: 1px solid #444;
+  color: var(--fg-subtle);
+  border-top: 1px solid var(--border);
   text-align: center;
   margin: 2rem 0;
   padding-top: 2rem;
