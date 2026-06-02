@@ -53,7 +53,7 @@
         in
         {
           packages.default = pkgs.runCommand "scopedcommits-minified" { } ''
-            ${pkgs.minify}/bin/minify ${typstOutput} --type html -o $out
+            ${pkgs.minify}/bin/minify ${typstOutput} --type html -o $out/index.html
           '';
 
           formatter = pkgs.writeShellScriptBin "fmt" ''
