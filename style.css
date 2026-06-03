@@ -44,6 +44,9 @@ body {
 .container {
   max-width: 800px;
   min-width: 0;
+  width: 100%;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
 }
 
 a,
@@ -71,6 +74,12 @@ header {
     margin-top: 0;
     color: var(--fg-muted);
   }
+}
+
+pre,
+code {
+  font-family: inherit;
+  font-size: 1rem;
 }
 
 pre {
