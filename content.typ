@@ -11,8 +11,8 @@ Normal commit messages should be formatted as follows:
 [optional trailer(s)]
 ```
 
-- `<scope>` --- the subsystem, area, or module that the commit touches.
-- `<description>` --- a short description of the changes made.
+- `<scope>` --- the subsystem, area, or module that the commit touches
+- `<description>` --- a short description of the changes made
 - `[optional body]` --- detailed information about the changes
 - `[optional trailer(s)]` --- additional metadata about the commit
 
@@ -120,8 +120,8 @@ relevant changes.
 
 *Don't.* Commit logs and changelogs serve different audiences. Commit logs are
 for contributors who need to understand how the codebase evolved. Changelogs are
-for users who need to understand what changed between releases. Here are a
-number of articles which concur with this point:
+for users who need to understand what changed between releases. Here are some
+articles which concur with this point:
 
 - #link(
     "https://keepachangelog.com/en/1.0.0/#log-diffs",
@@ -134,7 +134,7 @@ number of articles which concur with this point:
 
 == What if my commit covers multiple scopes?
 
-If your commit covers multiple scopes, you can try one of the following approaches:
+If your commit covers multiple scopes, try one of the following approaches:
 
 - Use a more general scope that encompasses all the relevant scopes.
 - List both scopes, separated by a comma.
