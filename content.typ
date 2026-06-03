@@ -11,10 +11,10 @@ Normal commit messages should be formatted as follows:
 [optional trailer(s)]
 ```
 
-- `<scope>` --- the subystem, area, or module that the commit touches.
+- `<scope>` --- the subsystem, area, or module that the commit touches.
 - `<description>` --- a short description of the changes made.
 - `[optional body]` --- detailed information about the changes
-- `[optional trailers(s)]` --- additional metadata about the commit
+- `[optional trailer(s)]` --- additional metadata about the commit
 
 Reverts, merges, and other special commits can be formatted however you like.
 
