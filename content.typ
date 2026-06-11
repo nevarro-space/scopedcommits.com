@@ -158,7 +158,7 @@ anywhere you want within the message, however here are a few suggestions:
 
 - Include it in parentheses after the scope. For example:
   ```
-  auth (TICKET-123): fix login bug
+  auth (PROJ-123): fix login bug
 
   This commit fixes the login bug by...
   ```
@@ -169,5 +169,5 @@ anywhere you want within the message, however here are a few suggestions:
 
   This commit fixes the login bug by...
 
-  TICKET-123
+  Jira-Ticket: PROJ-123
   ```
