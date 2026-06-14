@@ -11,6 +11,7 @@
       async: "async",
       src: "//stats.scopedcommits.com/count.js",
     ))
+    #html.elem("link", attrs: (rel: "canonical", href: "https://scopedcommits.com/"))
   ])
   #html.body([
     #html.div(class: "container", [
