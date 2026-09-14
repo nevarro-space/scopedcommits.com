@@ -5,6 +5,13 @@
     #html.title("Scoped Commits")
     #html.meta(charset: "utf-8")
     #html.meta(name: "viewport", content: "width=device-width, initial-scale=1")
+    #html.elem("link", attrs: (
+      rel: "preload",
+      href: "fonts/Iosevka-Regular.woff2",
+      "as": "font",
+      type: "font/woff2",
+      crossorigin: "crossorigin",
+    ))
     #html.style(read("style.css"))
     #html.elem("script", attrs: (
       "data-goatcounter": "https://stats.scopedcommits.com/count",
